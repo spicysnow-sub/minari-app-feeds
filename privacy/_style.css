@@ -1,0 +1,13 @@
+:root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#8a6a56; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#d3987e; }
+}
+body { font-family: -apple-system, "Hiragino Sans", sans-serif; max-width: 42rem;
+       margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.9;
+       color: var(--ink); background: var(--bg); }
+h1 { font-size: 1.6rem; margin: 0 0 2rem; }
+h2 { font-size: 1.05rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem;
+     border-top: 1px solid var(--line); }
+ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+a { color: var(--accent); }
+.dim { color: var(--dim); font-size: .9rem; }

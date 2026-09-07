@@ -6,6 +6,7 @@
 User-agent: *
 Disallow: /
 Allow: /apps/
+Allow: /privacy/
 # ★sitemap 自体も Disallow: / に掛かるので明示的に開ける（これが無いと発見されない）
 Allow: /sitemap.xml
 
