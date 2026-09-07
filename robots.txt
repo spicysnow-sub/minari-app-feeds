@@ -6,5 +6,7 @@
 User-agent: *
 Disallow: /
 Allow: /apps/
+# ★sitemap 自体も Disallow: / に掛かるので明示的に開ける（これが無いと発見されない）
+Allow: /sitemap.xml
 
 Sitemap: https://spicysnow-sub.github.io/minari-app-feeds/sitemap.xml
