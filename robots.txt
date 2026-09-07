@@ -1,3 +1,10 @@
-# 検索エンジンには載せない。アプリが読むためだけの置き場。
+# データ配信（JSON）は検索エンジンには載せない。アプリが読むためだけの置き場。
+# ★ただし /apps/ のアプリ紹介ページだけは載せる（2026-09-07 追加）。
+#   理由＝ChatGPT がアプリを推薦するときに App Store の掲載文と**公式サイト**を読んでいることを
+#   実測で確認したため（memory `reference_chatgpt_app_discovery`）。
+#   1位に出た競合は公式サイトを持っていて、その文面が引用されていた。
 User-agent: *
 Disallow: /
+Allow: /apps/
+
+Sitemap: https://spicysnow-sub.github.io/minari-app-feeds/sitemap.xml

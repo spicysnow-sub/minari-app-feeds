@@ -16,3 +16,15 @@
 
 すべて封筒つきの JSON で、`schema` / `generatedAt` / `attribution` を持つ。
 アプリ側は取り込む前に検査し、**古い・壊れている・出典が無いものは採らずに同梱データのまま動く**。
+
+## `apps/` — アプリ紹介ページ
+
+- [Datto](https://spicysnow-sub.github.io/minari-app-feeds/apps/datto/)
+- [Kotoba](https://spicysnow-sub.github.io/minari-app-feeds/apps/kotoba/)
+
+**なぜ置いたか（2026-09-07）**：ChatGPT にアプリを推薦させて実測したところ、
+App Store の**プロモーション文を逐語で引用**し、さらに競合1位については
+**公式サイトの文面も引用**していた。Datto には公式サイトが無かったので、同じ条件に並べるために置いた。
+
+★このため `robots.txt` は `/apps/` だけ `Allow` にしてある。
+**JSON のデータ配信は今までどおり検索エンジンに載せない**（そこは変えていない）。
