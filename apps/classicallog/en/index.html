@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ClassicalLog — A classical concert journal for iPhone</title>
-<meta name="description" content="Log the classical concerts you attend: programme piece by piece, the seat block you sat in, your notes. Count how many times you have heard a symphony. Free with no limit, export to JSON/CSV, no account, no ads. Concert catalogues from the LA Phil, Cleveland Orchestra, Sydney Symphony, Rochester Philharmonic and Vancouver Symphony, plus Japan and Germany.">
+<meta name="description" content="Log the classical concerts you attend: programme piece by piece, the seat block you sat in, your notes. Count how many times you have heard a symphony. Free with no limit, export to JSON/CSV, no account, no ads. Concert catalogues and on-sale dates from the London Symphony Orchestra, Barbican, Symphony Hall Birmingham, RSNO, Usher Hall and other UK box offices, plus the Boston Symphony (on-sale dates too), LA Phil, Cleveland, Sydney, Melbourne and Vancouver orchestras, Japan and Germany.">
 <link rel="canonical" href="https://spicysnow-sub.github.io/minari-app-feeds/apps/classicallog/en/">
 <link rel="alternate" hreflang="en" href="https://spicysnow-sub.github.io/minari-app-feeds/apps/classicallog/en/">
 <link rel="alternate" hreflang="ja" href="https://spicysnow-sub.github.io/minari-app-feeds/apps/classicallog/">
@@ -57,9 +57,9 @@
         {"@type": "Question", "name": "Can it count how many times I've heard a symphony, or how much of a composer's cycle I have left?",
          "acceptedAnswer": {"@type": "Answer", "text": "Yes. The programme is stored piece by piece against a works master, so the ledger counts each work and each composer's cycle — something a plain list of concerts cannot show."}},
         {"@type": "Question", "name": "Can I pick the concert from a list instead of typing it?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Yes. The app carries a concert catalogue, updated weekly, with programmes taken from the orchestras' own sites: the Los Angeles Philharmonic, The Cleveland Orchestra, Sydney Symphony Orchestra, Rochester Philharmonic Orchestra and Vancouver Symphony Orchestra, plus Japanese orchestras and halls, the Elbphilharmonie and Staatskapelle Dresden."}},
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. The app carries a concert catalogue, updated weekly, taken from the orchestras' and halls' own sites and box offices: in the UK the London Symphony Orchestra, London Philharmonic Orchestra, BBC Symphony Orchestra, Barbican Centre, Cadogan Hall, Symphony Hall Birmingham, Royal Scottish National Orchestra, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic, Bournemouth Symphony Orchestra, Opera North and Scottish Opera; in North America the Los Angeles Philharmonic, The Cleveland Orchestra, Boston Symphony Orchestra, Utah Symphony, Rochester Philharmonic, Vancouver, Calgary and Edmonton orchestras; in Australia and New Zealand the Sydney, Melbourne and Queensland Symphony Orchestras and the NZSO; plus Japanese orchestras and halls, the Elbphilharmonie and Staatskapelle Dresden."}},
         {"@type": "Question", "name": "Does it tell me when tickets go on sale?",
-         "acceptedAnswer": {"@type": "Answer", "text": "For ensembles that publish on-sale dates — currently Japanese orchestras and halls — yes: pick the ensemble and you are told the day the date is set. Orchestras outside Japan in the catalogue do not publish on-sale dates in a form the app can read yet, and the app says so next to their name rather than promising an alert it cannot send."}},
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes, where the box office publishes them: UK venues and orchestras that sell through Spektrix (London Symphony Orchestra and the Barbican, Symphony Hall Birmingham, RSNO, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic, Bournemouth Symphony Orchestra, Opera North, Scottish Opera), the Boston Symphony Orchestra, the Calgary Philharmonic, the New Zealand Symphony Orchestra, and Japanese orchestras and halls. Pick the ensemble and you are told the day the on-sale date is set. Where an orchestra does not publish on-sale dates in a readable form, the app says so next to its name rather than promising an alert it cannot send."}},
         {"@type": "Question", "name": "Where are my records stored? Do I need an account?",
          "acceptedAnswer": {"@type": "Answer", "text": "On your device. No account. Only anonymous usage counts (event names, no content) are sent, and you can switch that off under Privacy in Settings."}}
       ]
@@ -97,14 +97,19 @@ which block of which hall you liked. Logging is free with no limit. Records stay
 <h2>Where the catalogue comes from</h2>
 <table>
   <tr><th>Country</th><th>Sources</th><th>On-sale dates</th></tr>
-  <tr><td>United States</td><td>Los Angeles Philharmonic, The Cleveland Orchestra, Rochester Philharmonic Orchestra</td><td>Not yet</td></tr>
-  <tr><td>Canada</td><td>Vancouver Symphony Orchestra</td><td>Not yet</td></tr>
-  <tr><td>Australia</td><td>Sydney Symphony Orchestra</td><td>Not yet</td></tr>
+  <tr><td>United Kingdom</td><td>London Symphony Orchestra, BBC Symphony Orchestra, Academy of Ancient Music (via the Barbican), Cadogan Hall, Symphony Hall Birmingham, Royal Scottish National Orchestra, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic Orchestra, Bournemouth Symphony Orchestra, Royal Northern College of Music, Perth Concert Hall, Opera North, Scottish Opera</td><td>Yes</td></tr>
+  <tr><td>United Kingdom</td><td>London Philharmonic Orchestra</td><td>Not yet</td></tr>
+  <tr><td>United States</td><td>Boston Symphony Orchestra</td><td>Yes</td></tr>
+  <tr><td>United States</td><td>Los Angeles Philharmonic, The Cleveland Orchestra, Utah Symphony, Rochester Philharmonic Orchestra</td><td>Not yet</td></tr>
+  <tr><td>Canada</td><td>Calgary Philharmonic Orchestra</td><td>Yes</td></tr>
+  <tr><td>Canada</td><td>Vancouver Symphony Orchestra, Edmonton Symphony Orchestra</td><td>Not yet</td></tr>
+  <tr><td>New Zealand</td><td>New Zealand Symphony Orchestra</td><td>Yes</td></tr>
+  <tr><td>Australia</td><td>Sydney, Melbourne and Queensland Symphony Orchestras</td><td>Not yet</td></tr>
   <tr><td>Germany</td><td>Elbphilharmonie, Staatskapelle Dresden</td><td>Not yet</td></tr>
   <tr><td>Japan</td><td>Major orchestras and halls, plus ぶらあぼONLINE</td><td>Yes</td></tr>
 </table>
 <p class="dim">Only concerts and programmes are taken — facts, never text or images. Each concert links back to its source.
-Orchestras outside Japan do not publish on-sale dates in a form the app can read, so the app marks them
+On-sale dates are read straight from the box office where it publishes them (Spektrix venues in the UK, the Boston Symphony Orchestra, Calgary, NZSO, Japan). Where an orchestra does not, the app marks it
 “No on-sale dates yet” rather than promising an alert it cannot send.</p>
 
 <h2>Questions people ask</h2>
@@ -115,7 +120,7 @@ Yes — and how much of a composer's cycle is left. The programme is stored agai
 <p><strong>Can I pick the concert from a list instead of typing it?</strong><br>
 Yes, from the catalogue above, updated weekly.</p>
 <p><strong>Does it tell me when tickets go on sale?</strong><br>
-For Japanese orchestras and halls, yes. For the orchestras outside Japan, not yet — the app says so next to their name.</p>
+Yes, where the box office publishes them: UK venues and orchestras selling through Spektrix (LSO and the Barbican, Symphony Hall Birmingham, RSNO, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic, Bournemouth SO, Opera North, Scottish Opera), the Boston Symphony Orchestra, the Calgary Philharmonic, the NZSO, and Japanese orchestras and halls. Elsewhere the app says “No on-sale dates yet” next to the name.</p>
 <p><strong>Where are my records stored? Do I need an account?</strong><br>
 On your device. No account. Anonymous usage counts only, switchable off in Settings.</p>
 
