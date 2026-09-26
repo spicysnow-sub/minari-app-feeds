@@ -2,8 +2,8 @@
 <html lang="ja">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Museday — 毎日1枚の名画をホーム画面に（サブスクなし・広告なし）</title>
-<meta name="description" content="Museday は、パブリックドメインの名画を毎日1枚ホーム画面のウィジェットに出すアプリです。365枚をアプリに同梱しているので通信は不要。アカウントも広告もありません。Pro は買い切りです。">
+<title>Museday — 毎日1枚の名画をホーム画面に｜買い切り・広告なし・オフライン</title>
+<meta name="description" content="Museday は、毎日1枚の名画をホーム画面のウィジェットに届ける iPhone アプリです。ファン・ゴッホ、フェルメール、レンブラントなど240人以上の画家によるパブリックドメインの名画365枚を同梱しているので、通信なしで使えます。サブスクなし・広告なし・アカウント不要。Pro は買い切りです。">
 <link rel="canonical" href="https://spicysnow-sub.github.io/minari-app-feeds/apps/museday/">
 <link rel="alternate" hreflang="en" href="https://spicysnow-sub.github.io/minari-app-feeds/apps/museday/en/">
 <link rel="alternate" hreflang="ja" href="https://spicysnow-sub.github.io/minari-app-feeds/apps/museday/">
@@ -23,28 +23,109 @@
   li { margin: .3rem 0; }
   .dim { color: var(--dim); font-size: .9rem; }
   a { color: var(--accent); }
+  .lede { font-size: 1.08rem; }
   .langs { font-size: .85rem; color: var(--dim); margin-bottom: 2rem; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Museday",
+      "operatingSystem": "iOS 17 or later",
+      "applicationCategory": "LifestyleApplication",
+      "description": "Museday は、毎日1枚の名画をホーム画面のウィジェットに届ける iPhone アプリです。ファン・ゴッホ、フェルメール、レンブラントなど240人以上の画家によるパブリックドメインの名画365枚を同梱しているので、通信なしで使えます。サブスクなし・広告なし・アカウント不要。Pro は買い切りです。",
+      "url": "https://spicysnow-sub.github.io/minari-app-feeds/apps/museday/",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free with a one-time Pro purchase. Not a subscription."
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Minari Taniguchi"
+      },
+      "inLanguage": [
+        "en",
+        "ja",
+        "es",
+        "pt-BR",
+        "zh-Hans"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "サブスクですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。ダウンロードは無料で、Pro は1回だけの買い切りです。サブスクではなく、自動で更新されることもありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "広告は出ますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "出ません。無料版にも Pro にも、広告は一切ありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "アカウントや通信は必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アカウントは要りません。365枚の絵と解説をすべてアプリに同梱しているので、通信がなくても毎日絵が替わります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料でできることと Pro の違いは？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "無料：今日の絵を出す Small ウィジェット、ロック画面のウィジェット、美術館の解説、お気に入り、直近7日。Pro：Medium と Large のウィジェット、お気に入りや時代・所蔵館を選んで出すウィジェット、過去の全日付と絞り込み。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "絵はどこから来ていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "画像はシカゴ美術館とメトロポリタン美術館がパブリックドメイン（CC0）として公開しているものです。解説はシカゴ美術館の文章（CC BY 4.0）で、翻訳は Museday によるものです。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <p class="langs"><a href="en/">English</a> · 日本語</p>
 <h1>Museday</h1>
-<p class="tagline">毎日1枚の名画を、ホーム画面に。</p>
-<p>Museday は、パブリックドメインの名画を毎日1枚、ホーム画面のウィジェットに出します。絵は毎日0時に替わります。アプリを開くと、題名・作者・年・所蔵館と、美術館による作品の解説が読めます。</p>
-<h2>できること</h2>
+<p class="tagline">毎朝、ホーム画面に1枚の名画を。</p>
+<p class="lede">Museday は、毎日1枚の名画をホーム画面のウィジェットに届ける iPhone アプリです。0時になると新しい絵に替わるので、スマホを開くたびに、小さな美術館をひとめぐりできます。</p>
+<p><strong>買い切り。サブスクなし・広告なし・アカウント不要。通信なしで動きます。</strong></p>
+<h2>365日、365枚の名画</h2>
+<p>ファン・ゴッホ、フェルメール、レンブラント、ルノワール、スーラ、ボッティチェリ、クリムト。ルネサンスの祭壇画から日本の水墨画まで、240人以上の画家の作品を収めました。絵はすべてアプリに入っているので、読み込みを待つことはありません。</p>
+<h2>眺めるための仕立て</h2>
 <ul>
-  <li>365枚の絵をアプリに同梱。通信なし・アカウントなし・広告なし</li>
-  <li>ホーム画面のウィジェット（Small・Medium・Large）とロック画面のウィジェット</li>
-  <li>作品ごとの美術館の解説（英語・日本語・スペイン語・ポルトガル語（ブラジル）・中国語（簡体））</li>
-  <li>お気に入りと直近7日は無料</li>
+  <li>ホーム画面のウィジェット（Small・Medium・Large）と、ロック画面のウィジェット</li>
+  <li>絵をタップすると、美術館による作品の物語が読めます（日本語・英語・スペイン語・ポルトガル語（ブラジル）・中国語（簡体））</li>
+  <li>気に入った絵はお気に入りに。直近7日の絵もさかのぼれます</li>
 </ul>
-<h2>Pro（買い切り・サブスクではありません）</h2>
+<h2>Pro ── 一度買えば、ずっと</h2>
 <ul>
-  <li>Medium と Large のウィジェット</li>
-  <li>別の絵を出すウィジェット（お気に入り・時代・所蔵館から）</li>
+  <li>Medium と Large のウィジェットで、絵をゆったり大きく</li>
+  <li>お気に入り・時代・所蔵館を選んで出すウィジェット</li>
   <li>過去の全日付と、時代・所蔵館・作者での絞り込み</li>
 </ul>
-<h2>絵の出どころ</h2>
-<p>画像はシカゴ美術館とメトロポリタン美術館がパブリックドメイン（CC0）として公開しているものです。解説はシカゴ美術館の文章（CC BY 4.0）で、翻訳は Museday によるものとしてアプリ内に明記しています。</p>
+<p class="dim">Pro はアプリ内の買い切りです。サブスクではなく、更新されることもありません。</p>
+<h2>よくある質問</h2>
+<p><strong>サブスクですか？</strong><br>いいえ。ダウンロードは無料で、Pro は1回だけの買い切りです。サブスクではなく、自動で更新されることもありません。</p><p><strong>広告は出ますか？</strong><br>出ません。無料版にも Pro にも、広告は一切ありません。</p><p><strong>アカウントや通信は必要ですか？</strong><br>アカウントは要りません。365枚の絵と解説をすべてアプリに同梱しているので、通信がなくても毎日絵が替わります。</p><p><strong>無料でできることと Pro の違いは？</strong><br>無料：今日の絵を出す Small ウィジェット、ロック画面のウィジェット、美術館の解説、お気に入り、直近7日。Pro：Medium と Large のウィジェット、お気に入りや時代・所蔵館を選んで出すウィジェット、過去の全日付と絞り込み。</p><p><strong>絵はどこから来ていますか？</strong><br>画像はシカゴ美術館とメトロポリタン美術館がパブリックドメイン（CC0）として公開しているものです。解説はシカゴ美術館の文章（CC BY 4.0）で、翻訳は Museday によるものです。</p>
 <h2>プライバシー</h2>
-<p>お気に入りや設定は端末の中だけに保存します。送るのは匿名の利用状況だけで、設定から止められます。<a href="../../privacy/museday/">プライバシーポリシー</a></p>
+<p>お気に入りや設定は端末の中だけに保存します。どの絵を見たかを記録することはありません。送るのは匿名の利用状況だけで、設定から止められます。<a href="../../privacy/museday/">プライバシーポリシー</a></p>
 <h2>お問い合わせ</h2>
 <p>minari.tele@gmail.com</p>
