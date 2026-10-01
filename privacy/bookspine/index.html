@@ -16,6 +16,8 @@
 <h2>本の検索と表紙の取得</h2>
 <p>本を探すときと表紙を取り込むときに限り、公開されている書誌データベース
 <a href="https://openlibrary.org/">Open Library</a>（Internet Archive）へ、利用者が入力した検索語または ISBN を送信します。
+日本の本のバーコード（978-4 で始まる ISBN）を読み取ったときは、日本の出版社の書誌データベース
+<a href="https://openbd.jp/">openBD</a> へ、その ISBN を送信します。
 このとき送られるのは検索語（または ISBN）だけで、利用者の本棚の中身・氏名・端末の識別子は送信しません。
 検索を使わずに、書名を自分で入力して本を登録することもできます（通信は発生しません）。</p>
 
@@ -62,7 +64,9 @@ never shared with third parties. No account is required and no ads are shown.</p
 
 <h2>Book search and cover images</h2>
 <p>When you search for a book or fetch a cover, and only then, the app sends your search term (or the ISBN) to the
-public bibliographic database <a href="https://openlibrary.org/">Open Library</a> (Internet Archive). Only that search
+public bibliographic database <a href="https://openlibrary.org/">Open Library</a> (Internet Archive). When you scan the
+barcode of a Japanese book (an ISBN starting with 978-4), the ISBN is sent to <a href="https://openbd.jp/">openBD</a>,
+the bibliographic database of Japanese publishers. Only that search
 term is sent — never the contents of your shelf, your name, or any device identifier. You can also add a book by
 typing its title yourself, which sends nothing at all.</p>
 
