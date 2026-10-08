@@ -21,6 +21,11 @@
 <a href="https://openbd.jp/">openBD</a> へ、その ISBN を送信します。
 このとき送られるのは検索語（または ISBN）だけで、利用者の本棚の中身・氏名・端末の識別子は送信しません。
 検索を使わずに、書名を自分で入力して本を登録することもできます（通信は発生しません）。</p>
+<p>設定で「Apple Books からも表紙を探す」をオンにした場合に限り、表紙が見つからない本の書名と著者名を
+Apple の <a href="https://performance-partners.apple.com/search-api">iTunes Search API</a>（Apple Books の検索）へ送信し、
+見つかった表紙の画像を取り込みます。この設定は既定でオフで、いつでもオフに戻せます（オフにすると、Apple Books から取り込んだ表紙は端末から削除されます）。</p>
+<p>Goodreads の書き出しファイル（CSV）を取り込む機能（Pro）は、ファイルを端末内で読み取るだけで、ファイルの内容を開発者や第三者へ送信しません。
+取り込んだ本の表紙を取るときに限り、上記と同じく ISBN を Open Library へ（Apple Books の設定がオンなら書名と著者名を Apple へ）送信します。</p>
 
 <h2>カメラ</h2>
 <p>本の裏表紙の ISBN バーコードを読み取るときにのみカメラを使います。読み取りは端末内で完結し、
@@ -71,6 +76,13 @@ barcode of a Japanese book (an ISBN starting with 978-4), the ISBN is sent to <a
 the bibliographic database of Japanese publishers. Only that search
 term is sent — never the contents of your shelf, your name, or any device identifier. You can also add a book by
 typing its title yourself, which sends nothing at all.</p>
+<p>Only if you turn on “Also find covers on Apple Books” in Settings, the title and author of books without a cover
+are sent to Apple's <a href="https://performance-partners.apple.com/search-api">iTunes Search API</a> (Apple Books search),
+and the cover image found there is downloaded. This setting is off by default and can be turned off at any time
+(turning it off deletes the covers that came from Apple Books from your device).</p>
+<p>Importing a Goodreads export file (CSV, Pro) reads the file on your device only; its contents are never sent to the
+developer or any third party. To fetch covers for imported books, the ISBN is sent to Open Library as above (and,
+if the Apple Books setting is on, the title and author are sent to Apple).</p>
 
 <h2>Camera</h2>
 <p>The camera is used only to read the ISBN barcode on the back of a book. Recognition happens on the device;
