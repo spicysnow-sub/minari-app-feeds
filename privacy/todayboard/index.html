@@ -11,7 +11,19 @@
 
 <h2>利用者の情報</h2>
 <p>Todayboard（以下「本アプリ」）は、カレンダーの予定（読み取りのみ。端末の外には出しません）と表示の設定（範囲・カレンダーの選択）を利用者の端末内（アプリ専用の領域）にのみ保存します。
-本アプリはこれらの情報を開発者のサーバーへ送信せず、第三者へ提供しません。アカウントの作成は不要で、広告も表示しません。</p>
+本アプリはこれらの情報を開発者のサーバーへ送信せず、第三者へ提供しません。本アプリのアカウントの作成は不要で、広告も表示しません。</p>
+
+<h2>Google アカウントとつなぐ場合</h2>
+<p>本アプリは、利用者が「Google とつなぐ」を選んだときだけ、Google のサインイン画面を通じて、利用者の Google アカウントから次の情報を読み取ります。</p>
+<ul>
+  <li>メールアドレス（つないだアカウントを画面に表示し、見分けるため）</li>
+  <li>カレンダーの一覧（名前・色。カレンダーを選ぶ画面に出すため）</li>
+  <li>予定（タイトル・開始と終了の時刻・終日かどうか・場所・会議のリンク・利用者の出欠。今日から14日分。ウィジェットとアプリに表示するため。出欠は「欠席」にした予定を出さないためだけに使います。予定のメモは会議のリンクを探すためだけに読み、保存しません）</li>
+</ul>
+<p>権限は<strong>読み取りだけ</strong>です。本アプリが Google カレンダーの予定やカレンダーを作成・変更・削除することはありません。</p>
+<p>読み取りは端末から Google へ直接行い、開発者のサーバーを経由しません。読み取った情報とサインイン用の鍵は、利用者の端末内（アプリ専用の領域とキーチェーン）にのみ保存し、開発者のサーバーへ送信せず、第三者へ提供・販売しません。広告にも、AI・機械学習モデルの学習にも使いません。開発者が利用者の予定を見ることはありません。</p>
+<p>アプリの設定から、つないだアカウントをいつでも外せます。外すと、Google での許可を取り消し、そのアカウントの鍵と予定を端末から削除します。Google アカウントの「サードパーティのアプリとサービス」（<a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>）からも取り消せます。アプリを削除すると、端末内の情報も消えます。</p>
+<p>本アプリが Google API から受け取った情報の利用と、他のアプリへの転送は、限定的使用の要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>に従います。</p>
 
 <h2>匿名の利用状況</h2>
 <p>本アプリの改善のため、以下の匿名の記録を開発者のサーバーへ送信します。</p>
@@ -20,13 +32,14 @@
   <li>Pro のご案内が表示された画面と、その表示のきっかけとなった機能の種類</li>
   <li>ウィジェットが表示されたこと、およびそのサイズ</li>
   <li>カレンダーへのアクセスが許可されたかどうか（内容は含みません）</li>
+  <li>Google とつないだかどうかと、つないだアカウントの数（メールアドレスは含みません）</li>
   <li>アプリのバージョン・OS のバージョン・言語設定</li>
   <li>端末内で生成した無作為な識別子（アプリを削除すると消えます）</li>
   <li>接続元の国（IP アドレスは保存しません）</li>
 </ul>
 <p>以下は送信しません。</p>
 <ul>
-  <li>予定のタイトル・時刻・参加者・カレンダー名など、利用者の内容</li>
+  <li>予定のタイトル・時刻・参加者・カレンダー名など、利用者の内容（Google から読んだものを含む）</li>
   <li>氏名・メールアドレス・電話番号・住所などの連絡先情報</li>
   <li>広告識別子（IDFA）および端末識別子（IDFV）</li>
   <li>位置情報</li>
@@ -40,7 +53,7 @@
 <h2>お問い合わせ</h2>
 <p>minaritaniguchi@gmail.com</p>
 
-<p class="dim">制定日：2026-09-20<br>
+<p class="dim">制定日：2026-09-20<br>改定日：2026-10-10（Google アカウントとつなぐ場合を追加）<br>
 <a href="../../apps/todayboard/">Todayboard について</a></p>
 
 <section lang="en" id="en" style="margin-top:3rem;border-top:1px solid #ddd;padding-top:1.5rem">
@@ -51,20 +64,33 @@
 <p>Todayboard ("the app") stores your calendar events (read-only; they never leave the device) and display settings (range, selected calendars) only on your device, in the app's own container.
 The app does not send them to the developer's servers and does not share them with third parties. There is no account and no advertising.</p>
 
+<h2>If you connect a Google account</h2>
+<p>Only when you choose "Connect Google", and through Google's own sign-in screen, the app reads the following from your Google account:</p>
+<ul>
+  <li>Your email address (to show and tell apart the connected accounts)</li>
+  <li>Your calendar list (names and colors, shown in the calendar picker)</li>
+  <li>Your events (title, start and end time, all-day flag, location, meeting link and your response, for today and the next 14 days, shown in the widget and the app. Your response is used only to hide events you declined. Event notes are read only to find a meeting link and are not stored)</li>
+</ul>
+<p>Access is <strong>read-only</strong>. The app never creates, changes or deletes your Google calendars or events.</p>
+<p>The device talks to Google directly; nothing passes through the developer's servers. The data and the sign-in token are stored only on your device (in the app's own container and the Keychain). They are never sent to the developer, never shared with or sold to third parties, and never used for advertising or to train AI or machine-learning models. The developer never sees your events.</p>
+<p>You can disconnect an account at any time in the app's settings. Disconnecting revokes the app's access at Google and deletes that account's token and events from the device. You can also revoke access from "Third-party apps &amp; services" in your Google Account (<a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>). Deleting the app also deletes the data on the device.</p>
+<p>Todayboard's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
 <h2>Anonymous usage</h2>
 <p>To improve the app, the following anonymous records are sent to the developer's server.</p>
 <ul>
   <li>The kind of action taken, such as opening the app</li>
   <li>Which screen showed the Pro offer, and which feature triggered it</li>
   <li>That a widget was displayed, and its size</li>
-  <li>whether calendar access was granted (never the content)</li>
+  <li>Whether calendar access was granted (never the content)</li>
+  <li>Whether a Google account was connected, and how many (never the address)</li>
   <li>App version, OS version and language setting</li>
   <li>A random identifier generated on the device (deleted when you delete the app)</li>
   <li>The country of the connection (IP addresses are not stored)</li>
 </ul>
 <p>The following are never sent:</p>
 <ul>
-  <li>Your content — event titles, times, attendees or calendar names</li>
+  <li>Your content — event titles, times, attendees or calendar names (including anything read from Google)</li>
   <li>Contact details such as name, email address, phone number or postal address</li>
   <li>Advertising identifier (IDFA) or device identifier (IDFV)</li>
   <li>Location</li>
@@ -77,6 +103,6 @@ Stopping also deletes any records not yet sent from the device.</p>
 
 <h2>Contact</h2>
 <p>minaritaniguchi@gmail.com</p>
-<p class="dim">Effective 2026-09-20<br>
+<p class="dim">Effective 2026-09-20<br>Updated 2026-10-10 (added "If you connect a Google account")<br>
 <a href="../../apps/todayboard/en/">About Todayboard</a></p>
 </section>
