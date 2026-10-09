@@ -20,8 +20,8 @@
 
 ## `apps/` — アプリ紹介ページ
 
-- [Datto](https://spicysnow-sub.github.io/minari-app-feeds/apps/datto/)
-- [Kotoba](https://spicysnow-sub.github.io/minari-app-feeds/apps/kotoba/)
+- [Datto](https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/)
+- [Kotoba](https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/)
 
 **なぜ置いたか（2026-09-07）**：ChatGPT にアプリを推薦させて実測したところ、
 App Store の**プロモーション文を逐語で引用**し、さらに競合1位については
