@@ -15,6 +15,10 @@
 <p>終わりの音と振動は、端末内で予定するローカル通知で鳴らします（連続タイマーは段の切り替わりにも）。プッシュ通知のサーバーは使いません。
 通知の許可は iPhone の「設定」からいつでも変えられます。
 ロック画面とダイナミックアイランドの円盤（ライブアクティビティ）は端末内で描かれます。マイクは使いません。</p>
+<h2>Apple ヘルスケア</h2>
+<p>設定で「ワークアウトをヘルスケアに保存」をオンにした場合に限り、最後まで終えた（または1分以上動いてから止めた）インターバルを、ワークアウト（種類・開始と終了の時刻）として利用者の端末のヘルスケア App に書き込みます。ふつうのタイマーと連続タイマーは書き込みません。タイマーの名前も書き込みません。
+ヘルスケアからは何も読み取りません。ヘルスケアのデータは端末の外へ送信せず、開発者のサーバーへも送りません。広告や広告効果の測定、データブローカーへの提供には一切使用しません。
+許可はヘルスケア App（プロフィール＞App＞Slowdial）からいつでも取り消せます。</p>
 <h2>匿名の利用状況</h2>
 <p>本アプリの改善のため、以下の匿名の記録を開発者のサーバーへ送信します。</p>
 <ul>
@@ -28,6 +32,7 @@
   <li>連続タイマーの本数（名前は含みません）</li>
   <li>Pro を購入済みかどうか</li>
   <li>評価のお願いや案内を表示したこと</li>
+  <li>ヘルスケアへの保存をオン／オフにしたこと、ワークアウトを書けたかどうかと、その種類・長さ（秒）</li>
   <li>アプリのバージョン・OS のバージョン・言語設定</li>
   <li>端末内で生成した無作為な識別子（アプリを削除すると消えます）</li>
   <li>接続元の国（IP アドレスは保存しません）</li>
@@ -58,6 +63,11 @@ The app does not send them to the developer's servers and does not share them wi
 <p>The end sound and vibration are local notifications scheduled on your device (for sequences, also at each step change). No push notification server is used.
 You can change notification permission at any time in the iPhone Settings app.
 The Lock Screen and Dynamic Island disc (Live Activity) is drawn on your device. The microphone is never used.</p>
+<h2>Apple Health</h2>
+<p>Only if you turn on "Save workouts to Health" in Settings, each interval you finish (or stop after at least a minute) is written to the Health app on your device
+as a workout (its type and start and end times). Plain timers and sequences are not written, and timer names are not written. The app reads nothing from Health.
+Health data never leaves your device and is never sent to the developer's servers. It is never used for advertising,
+ad measurement, or shared with data brokers. You can revoke access at any time in the Health app (profile › Apps › Slowdial).</p>
 <h2>Anonymous usage</h2>
 <p>To improve the app, the following anonymous records are sent to the developer's server.</p>
 <ul>
@@ -71,6 +81,7 @@ The Lock Screen and Dynamic Island disc (Live Activity) is drawn on your device.
   <li>The number of sequences (never their names)</li>
   <li>Whether Pro has been purchased</li>
   <li>That a rating request or a guide was shown</li>
+  <li>That saving to Health was turned on or off, and whether a workout was written, with its type and length (seconds)</li>
   <li>App version, OS version and language setting</li>
   <li>A random identifier generated on the device (deleted when you delete the app)</li>
   <li>The country of the connection (IP addresses are not stored)</li>
