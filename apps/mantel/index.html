@@ -4,10 +4,13 @@
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mantel — 自分の写真をホーム画面に（写真ウィジェット・サブスクなし）</title>
-<meta name="description" content="サブスクなしの iPhone 写真ウィジェット。選んだ写真がホーム画面のウィジェットで入れ替わります。広告なし・アカウント不要・写真は端末から出ません。">
+<meta name="description" content="選んだ写真を、ホーム画面のウィジェットで入れ替えて見せる iPhone アプリ。サブスクなし・広告なし・アカウント登録不要。">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/">
 <link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pt/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh/">
 <link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/">
 <style>
   :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#2E6E70; }
@@ -29,6 +32,7 @@
          border-radius: 999px; text-decoration: none; font-weight: 600; }
   .langs { font-size: .85rem; color: var(--dim); margin-bottom: 2rem; }
 </style>
+<style> ol { padding-left: 1.3rem; } ol li { margin: .45rem 0; } </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,27 +40,69 @@
     {
       "@type": "SoftwareApplication",
       "name": "Mantel",
-      "alternateName": ["Mantel – Photo Widget"],
+      "alternateName": [
+        "Mantel – Photo Widget"
+      ],
       "operatingSystem": "iOS 17 or later",
       "applicationCategory": "PhotographyApplication",
-      "description": "サブスクなしの iPhone 写真ウィジェット。選んだ写真がホーム画面のウィジェットで入れ替わります。広告なし・アカウント不要・写真は端末から出ません。",
+      "description": "選んだ写真を、ホーム画面のウィジェットで入れ替えて見せる iPhone アプリ。サブスクなし・広告なし・アカウント登録不要。",
       "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/",
       "installUrl": "https://apps.apple.com/app/id6814138903",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free with a one-time Pro purchase. Not a subscription."},
-      "author": {"@type": "Person", "name": "Minari Taniguchi"},
-      "inLanguage": ["en", "ja"]
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free with a one-time Pro purchase. Not a subscription."
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Minari Taniguchi"
+      },
+      "inLanguage": "ja"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "サブスクなしの写真ウィジェットはありますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "はい。Mantel の Pro は買い切りです。1セット12枚と1時間ごとに変わる Small ウィジェットはずっと無料。広告なし・アカウント不要。"}},
-        {"@type": "Question", "name": "自分の写真をホーム画面で入れ替えるには？",
-         "acceptedAnswer": {"@type": "Answer", "text": "Mantel を開いて「写真を選ぶ」から何枚か選び、ホーム画面に Mantel のウィジェットを置くだけ。無料は1時間ごと、Pro で間隔とシャッフルを選べます。"}},
-        {"@type": "Question", "name": "写真ライブラリ全体へのアクセスは必要ですか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "いいえ。標準の選択画面を使うので、選んだ写真しか見えません。元の写真はそのままです。"}},
-        {"@type": "Question", "name": "写真はどこかにアップロードされますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "されません。写真は端末の中にだけあります。"}}
+        {
+          "@type": "Question",
+          "name": "写真ライブラリ全体へのアクセスは必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。iPhone 標準の写真選択画面を使うので、Mantel から見えるのは選んだ写真だけです。元の写真には手を加えません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "写真はどこかにアップロードされますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "開発者のサーバーには送られません。写真は端末の中に保存されます。Pro で「iCloud で同期」がオンのときは、あなた自身の iCloud にも保存されます（設定でオフにできます）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Medium や Large のウィジェットに鍵のマークが出ます。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Medium・Large・ロック画面のウィジェットは Pro の機能です。無料では Small ウィジェットを1枚使えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "別の iPhone で Pro が使えません。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "購入したときと同じ Apple アカウントで App Store にサインインしているか確かめてから、Mantel の設定にある「購入を復元」を押してください。購入した直後は、反映まで少し時間がかかることがあります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "問い合わせはどこからできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mantel の設定 →「問い合わせ・不具合の報告」からメールを送れます。アプリと iOS のバージョン、機種が自動で入ります。"
+          }
+        }
       ]
     }
   ]
@@ -65,44 +111,29 @@
 
 <h1>Mantel</h1>
 <p class="tagline">自分の写真を、ホーム画面に。サブスクなしの写真ウィジェット。</p>
-<p class="langs"><a href="en/">English</a></p>
-
-<p class="lede">Mantel は<strong>サブスクなし</strong>の写真ウィジェットです。犬、友だち、去年の夏——何枚か選ぶだけで、いつも見ている場所で写真が入れ替わります。写真は端末の外に出ません。</p>
-
+<p class="langs"><strong>日本語</strong> · <a href="en/">English</a> · <a href="es/">Español</a> · <a href="pt/">Português</a> · <a href="zh/">简体中文</a></p>
+<p class="lede">Mantel は、選んだ写真をホーム画面のウィジェットで入れ替えて見せるアプリです。犬、友だち、去年の夏の写真——何枚か選ぶだけで、毎日目にする場所に写真が並びます。サブスクはありません。</p>
 <a class="cta" href="https://apps.apple.com/app/id6814138903">App Store で見る</a>
-
-<h2>料金のこと</h2>
-<ul>
-  <li>Pro は買い切り。サブスクではありません。</li>
-  <li>広告なし。</li>
-  <li>アカウント不要。</li>
-  <li>ライブラリ全体へのアクセスは求めません——選んだ写真だけをコピーします。</li>
-  <li>1セット12枚と Small ウィジェット1枚は、ローテ込みでずっと無料。</li>
-</ul>
-
-<h2>できること</h2>
-<ul>
-  <li>標準の選択画面で写真を選ぶ。ホーム画面のウィジェットで1時間ごとに入れ替わる</li>
-  <li>「いっぱいに」「全体」の入れ方</li>
-  <li>Pro：Medium・Large、セットと枚数の無制限、15分／1時間／6時間／1日の間隔、シャッフル</li>
-  <li>英語・日本語</li>
-  <li>iOS 17 以降</li>
-</ul>
-
+<h2>使い方</h2>
+<ol><li>Mantel を開いて「写真を選ぶ」をタップし、ウィジェットに出したい写真を選びます。</li><li>ホーム画面の何もないところを長押しし、「編集」→「ウィジェットを追加」から Mantel を選んで置きます。</li><li>置いたウィジェットは、1時間ごとに次の写真へ切り替わります。</li></ol>
+<h2>もっと使いこなす</h2>
+<p><strong>写真のどこを見せるか選ぶ</strong><br>セットの写真を長押しして「位置を調整」を選び、見せたいところをタップします。ウィジェットでは、そこを中心に切り取って表示します。</p>
+<p><strong>写真の入れ方を選ぶ</strong><br>「枠いっぱい」はウィジェット全体に写真を広げます（写真の端が少し切れることがあります）。「写真全体」は写真を切らずに表示し、まわりに少し余白ができます。</p>
+<p><strong>時間でセットを切り替える（Pro）</strong><br>セットの「決まった時間に出す」をオンにして時間帯と曜日を決めます。次にウィジェットを長押しして「ウィジェットを編集」を開き、「時間で切り替え」を選びます。</p>
+<p><strong>写真に文字と日数を重ねる（Pro）</strong><br>セットの「写真に重ねる文字」に一言を入れるか、「日数を出す」をオンにします。日付から何日たったか、その日まであと何日かを表示できます。</p>
+<p><strong>別の iPhone と同期する（Pro）</strong><br>Pro では「iCloud で同期」が最初からオンになっています。同じ Apple アカウントの iPhone で Mantel を開くと、同じセットと写真が表示されます。</p>
+<h2>料金</h2>
+<ul><li>無料：セット1つ・1セット12枚まで、Small ウィジェット1枚（1時間ごとに切り替え）。期限はなく、ずっと使えます。</li><li>Pro（買い切り。サブスクではありません）：Medium・Large・ロック画面のウィジェット、セットと写真の枚数の上限なし、切り替え間隔（15分／1時間／6時間／1日）とシャッフル、時間で切り替え、文字と日数、iCloud で同期。</li><li>広告は表示しません。アカウント登録も不要です。</li></ul>
 <h2>よくある質問</h2>
-<p><strong>サブスクなしの写真ウィジェットはありますか？</strong><br>
-はい。Mantel の Pro は買い切りです。1セット12枚と1時間ごとに変わる Small ウィジェットはずっと無料。広告なし・アカウント不要。</p>
-<p><strong>自分の写真をホーム画面で入れ替えるには？</strong><br>
-Mantel を開いて「写真を選ぶ」から何枚か選び、ホーム画面に Mantel のウィジェットを置くだけ。無料は1時間ごと、Pro で間隔とシャッフルを選べます。</p>
-<p><strong>写真ライブラリ全体へのアクセスは必要ですか？</strong><br>
-いいえ。標準の選択画面を使うので、選んだ写真しか見えません。元の写真はそのままです。</p>
-<p><strong>写真はどこかにアップロードされますか？</strong><br>
-されません。写真は端末の中にだけあります。</p>
-
+<p><strong>写真ライブラリ全体へのアクセスは必要ですか？</strong><br>いいえ。iPhone 標準の写真選択画面を使うので、Mantel から見えるのは選んだ写真だけです。元の写真には手を加えません。</p>
+<p><strong>写真はどこかにアップロードされますか？</strong><br>開発者のサーバーには送られません。写真は端末の中に保存されます。Pro で「iCloud で同期」がオンのときは、あなた自身の iCloud にも保存されます（設定でオフにできます）。</p>
+<p><strong>Medium や Large のウィジェットに鍵のマークが出ます。</strong><br>Medium・Large・ロック画面のウィジェットは Pro の機能です。無料では Small ウィジェットを1枚使えます。</p>
+<p><strong>別の iPhone で Pro が使えません。</strong><br>購入したときと同じ Apple アカウントで App Store にサインインしているか確かめてから、Mantel の設定にある「購入を復元」を押してください。購入した直後は、反映まで少し時間がかかることがあります。</p>
+<p><strong>問い合わせはどこからできますか？</strong><br>Mantel の設定 →「問い合わせ・不具合の報告」からメールを送れます。アプリと iOS のバージョン、機種が自動で入ります。</p>
+<h2>対応</h2>
+<ul><li>iPhone（iOS 17 以降）</li><li>日本語・英語・スペイン語・ポルトガル語・中国語（簡体字）</li></ul>
 <h2>プライバシー</h2>
-<p>データは端末の中にだけあります。
-<a href="../../privacy/mantel/">プライバシーポリシー</a>.</p>
-
+<p>写真やセットの内容を、開発者が受け取ることはありません。 <a href="../../privacy/mantel/">プライバシーポリシー</a></p>
 <p class="dim" style="margin-top:3rem">
   <a href="../../">minari-app-feeds</a> · Made by Minari Taniguchi
 </p>

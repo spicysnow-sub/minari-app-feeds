@@ -3,11 +3,14 @@
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mantel — Put your own photos on your iPhone Home Screen (photo widget, no subscription)</title>
-<meta name="description" content="A photo widget for iPhone with no subscription: pick a few of your own photos and they rotate in a Home Screen widget. No ads, no account, and only the photos you pick leave the Photos app.">
+<title>Mantel — Your own photos on your Home Screen (photo widget, no subscription)</title>
+<meta name="description" content="An iPhone app that rotates the photos you pick in a Home Screen widget. No subscription, no ads, no account.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/">
 <link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pt/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh/">
 <link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/">
 <style>
   :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#2E6E70; }
@@ -29,6 +32,7 @@
          border-radius: 999px; text-decoration: none; font-weight: 600; }
   .langs { font-size: .85rem; color: var(--dim); margin-bottom: 2rem; }
 </style>
+<style> ol { padding-left: 1.3rem; } ol li { margin: .45rem 0; } </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,29 +40,69 @@
     {
       "@type": "SoftwareApplication",
       "name": "Mantel",
-      "alternateName": ["Mantel – Photo Widget"],
+      "alternateName": [
+        "Mantel – Photo Widget"
+      ],
       "operatingSystem": "iOS 17 or later",
       "applicationCategory": "PhotographyApplication",
-      "description": "A photo widget for iPhone with no subscription: pick a few of your own photos and they rotate in a Home Screen widget. No ads, no account, and only the photos you pick leave the Photos app.",
+      "description": "An iPhone app that rotates the photos you pick in a Home Screen widget. No subscription, no ads, no account.",
       "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/en/",
       "installUrl": "https://apps.apple.com/app/id6814138903",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free with a one-time Pro purchase. Not a subscription."},
-      "author": {"@type": "Person", "name": "Minari Taniguchi"},
-      "inLanguage": ["en", "ja"]
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free with a one-time Pro purchase. Not a subscription."
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Minari Taniguchi"
+      },
+      "inLanguage": "en"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "Is there an iPhone photo widget that doesn't need a subscription?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mantel's Pro is a one-time purchase, not a subscription. One set of 12 photos and a Small widget that rotates hourly are free forever, with no ads and no account."}},
-        {"@type": "Question", "name": "How do I put my own photos on my iPhone Home Screen as a rotating widget?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Open Mantel, tap Pick photos and choose a few. Then add the Mantel widget to your Home Screen. The photo changes every hour on the free plan; Pro lets you choose the interval and shuffle."}},
-        {"@type": "Question", "name": "Does Mantel need access to my whole photo library?",
-         "acceptedAnswer": {"@type": "Answer", "text": "No. Mantel uses the system photo picker, so it only ever sees the photos you pick. Those are copied into the app; your originals in Photos are untouched."}},
-        {"@type": "Question", "name": "Are my photos uploaded anywhere?",
-         "acceptedAnswer": {"@type": "Answer", "text": "No. Your photos stay on your device. Mantel has no account and no server for your photos."}},
-        {"@type": "Question", "name": "Can I have different photo widgets for different people or trips?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Yes, with Pro: unlimited sets — family, travel, pets — and one set per widget, in Small, Medium or Large."}}
+        {
+          "@type": "Question",
+          "name": "Does Mantel need access to my whole photo library?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It uses the standard iPhone photo picker, so Mantel only sees the photos you pick. Your original photos are never changed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my photos uploaded anywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are never sent to the developer's servers. Photos are stored on your device, and — only with Pro and “Sync with iCloud” on — in your own iCloud too (you can turn it off in Settings)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "There's a lock on my Medium or Large widget.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Medium, Large and Lock Screen widgets are Pro features. The free version includes one Small widget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pro isn't working on my other iPhone.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check that the App Store on that iPhone is signed in with the same Apple Account you bought with, then tap “Restore Purchases” in Mantel's Settings. Right after buying, it can take a little while to show up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I contact you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Mantel, go to Settings → “Contact / report a problem” to send an email. The app version, iOS version and iPhone model are filled in for you."
+          }
+        }
       ]
     }
   ]
@@ -66,47 +110,30 @@
 </script>
 
 <h1>Mantel</h1>
-<p class="tagline">Your own photos on your Home Screen — a photo widget. No subscription.</p>
-<p class="langs"><a href="../">日本語</a></p>
-
-<p class="lede">Mantel is a photo widget for iPhone with <strong>no subscription</strong>. Pick a few photos — your dog, your friends, last summer — and they rotate in a widget, right where you already look. Nothing leaves your phone.</p>
-
+<p class="tagline">Your own photos on your Home Screen. A photo widget with no subscription.</p>
+<p class="langs"><a href="../">日本語</a> · <strong>English</strong> · <a href="../es/">Español</a> · <a href="../pt/">Português</a> · <a href="../zh/">简体中文</a></p>
+<p class="lede">Mantel shows the photos you pick in a Home Screen widget and rotates them. Your dog, your friends, last summer — pick a few and they appear right where you look every day. No subscription.</p>
 <a class="cta" href="https://apps.apple.com/app/id6814138903">View on the App Store</a>
-
-<h2>Pricing, plainly</h2>
-<ul>
-  <li>Pro is a one-time purchase, not a subscription.</li>
-  <li>No ads.</li>
-  <li>No account.</li>
-  <li>Mantel never asks for access to your whole photo library — only the photos you pick are copied.</li>
-  <li>One set of 12 photos and one Small widget stay free forever, rotation included.</li>
-</ul>
-
-<h2>What it does</h2>
-<ul>
-  <li>Pick photos with the system picker; they rotate in a Home Screen widget every hour</li>
-  <li>Fill the frame or fit the whole photo</li>
-  <li>Pro: Medium and Large widgets, unlimited sets and photos, rotation every 15 minutes / hourly / 6 hours / daily, shuffle</li>
-  <li>Available in English and Japanese</li>
-  <li>iOS 17 or later</li>
-</ul>
-
-<h2>Questions people ask</h2>
-<p><strong>Is there an iPhone photo widget that doesn't need a subscription?</strong><br>
-Yes. Mantel's Pro is a one-time purchase, not a subscription. One set of 12 photos and a Small widget that rotates hourly are free forever, with no ads and no account.</p>
-<p><strong>How do I put my own photos on my iPhone Home Screen as a rotating widget?</strong><br>
-Open Mantel, tap Pick photos and choose a few. Then add the Mantel widget to your Home Screen. The photo changes every hour on the free plan; Pro lets you choose the interval and shuffle.</p>
-<p><strong>Does Mantel need access to my whole photo library?</strong><br>
-No. Mantel uses the system photo picker, so it only ever sees the photos you pick. Those are copied into the app; your originals in Photos are untouched.</p>
-<p><strong>Are my photos uploaded anywhere?</strong><br>
-No. Your photos stay on your device. Mantel has no account and no server for your photos.</p>
-<p><strong>Can I have different photo widgets for different people or trips?</strong><br>
-Yes, with Pro: unlimited sets — family, travel, pets — and one set per widget, in Small, Medium or Large.</p>
-
+<h2>How to use</h2>
+<ol><li>Open Mantel, tap “Pick photos” and choose the photos you want in the widget.</li><li>Touch and hold an empty spot on your Home Screen, tap “Edit” → “Add Widget”, and add Mantel.</li><li>The widget moves to the next photo every hour.</li></ol>
+<h2>Getting more out of it</h2>
+<p><strong>Choose which part of a photo shows</strong><br>Touch and hold a photo in a set, choose “Adjust position”, and tap the spot you want to keep in view. The widget crops around that spot.</p>
+<p><strong>Fill frame or whole photo</strong><br>“Fill frame” fills the widget (the edges of the photo may be cropped). “Whole photo” shows the entire photo without cropping, with a small margin around it.</p>
+<p><strong>Switch sets by time (Pro)</strong><br>In a set, turn on “Show at set times” and choose the hours and days. Then touch and hold the widget, open “Edit Widget” and choose “Switch by time”.</p>
+<p><strong>Add words and a day count (Pro)</strong><br>In a set, type a short line under “Text on photo” or turn on “Show a day count” — days since a date, or days until it.</p>
+<p><strong>Sync with your other iPhone (Pro)</strong><br>With Pro, “Sync with iCloud” is on from the start. Open Mantel on another iPhone with the same Apple Account and the same sets and photos appear.</p>
+<h2>Pricing</h2>
+<ul><li>Free: one set of up to 12 photos and one Small widget that changes every hour. No time limit.</li><li>Pro (one-time purchase, not a subscription): Medium, Large and Lock Screen widgets, unlimited sets and photos, rotation interval (15 min / 1 hour / 6 hours / 1 day) and shuffle, switch by time, words and day counts, iCloud sync.</li><li>No ads. No account needed.</li></ul>
+<h2>FAQ</h2>
+<p><strong>Does Mantel need access to my whole photo library?</strong><br>No. It uses the standard iPhone photo picker, so Mantel only sees the photos you pick. Your original photos are never changed.</p>
+<p><strong>Are my photos uploaded anywhere?</strong><br>They are never sent to the developer&#x27;s servers. Photos are stored on your device, and — only with Pro and “Sync with iCloud” on — in your own iCloud too (you can turn it off in Settings).</p>
+<p><strong>There&#x27;s a lock on my Medium or Large widget.</strong><br>Medium, Large and Lock Screen widgets are Pro features. The free version includes one Small widget.</p>
+<p><strong>Pro isn&#x27;t working on my other iPhone.</strong><br>Check that the App Store on that iPhone is signed in with the same Apple Account you bought with, then tap “Restore Purchases” in Mantel&#x27;s Settings. Right after buying, it can take a little while to show up.</p>
+<p><strong>How do I contact you?</strong><br>In Mantel, go to Settings → “Contact / report a problem” to send an email. The app version, iOS version and iPhone model are filled in for you.</p>
+<h2>Requirements</h2>
+<ul><li>iPhone (iOS 17 or later)</li><li>English, Japanese, Spanish, Portuguese, Chinese (Simplified)</li></ul>
 <h2>Privacy</h2>
-<p>Your data stays on your device.
-<a href="../../../privacy/mantel/">Privacy policy</a>.</p>
-
+<p>The developer never receives your photos or the contents of your sets. <a href="../../../privacy/mantel/">Privacy Policy</a></p>
 <p class="dim" style="margin-top:3rem">
   <a href="../../../">minari-app-feeds</a> · Made by Minari Taniguchi
 </p>
