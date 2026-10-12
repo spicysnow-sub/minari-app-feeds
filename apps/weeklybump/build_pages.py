@@ -40,11 +40,11 @@ T = {
     more=[("パートナーと共有（Pro）", "本体の「パートナーと共有」からリンクを送ると、相手の iPhone のウィジェットに今週と、アルバムに入れた今週のおなかの写真が届きます。1回の購入で2人とも Pro です。相手も Petalweek を入れてリンクを開いてください。"),
           ("花の色を選ぶ", "設定の「外観」で、ローズとピオニーから選べます。ウィジェットも同じ色になります。"),
           ("おなかの写真アルバム（Pro）", "1週に1枚、40週を1か所に。スライドショーで見返せます。"),
-          ("節目のカウントダウン（Pro）", "産休やベビーシャワーなど、自分の節目まであと何日かをウィジェットに出せます。"),
-          ("記録を閉じる", "設定の「記録を閉じる」で、予定日・写真・節目を消し、ウィジェットを空に戻せます。パートナーと共有していたら、相手の画面からも消えます。")],
+          ("大切な日までのカウントダウン（Pro）", "産休やベビーシャワーなど、大切な日まであと何日かをウィジェットに出せます。"),
+          ("記録を閉じる", "設定の「記録を閉じる」で、予定日・写真・大切な日を消し、ウィジェットを空に戻せます。パートナーと共有していたら、相手の画面からも消えます。")],
     h_price="料金",
     price=["無料：アプリの中の週数・あと何日・花びら、Small ウィジェット、花の色。期限はありません。",
-           "Pro（買い切り・サブスクではありません）：パートナーと共有、Medium・Large・ロック画面のウィジェット、おなかの写真アルバム、節目、週替わりのお知らせ。",
+           "Pro（買い切り・サブスクではありません）：パートナーと共有、Medium・Large・ロック画面のウィジェット、おなかの写真アルバム、大切な日のカウントダウン、週替わりのお知らせ。",
            "広告なし・アカウント不要。"],
     h_faq="よくある質問",
     faq=[("サブスクですか？", "いいえ。ダウンロードは無料で、Pro は1回だけの買い切りです。自動で更新されることはありません。"),
@@ -232,8 +232,30 @@ T = {
 ),
 }
 
+# ★パートナーと共有は、実機で確かめるまでアプリで隠している（2026-10-12 本人）＝ページにも書かない。出すときは True にして作り直す。
+PARTNER = False
+PARTNER_CUT = {  # 言語ごとに、共有に触れている文・語句
+    "ja": ["パートナーのウィジェットにも今週とおなかの写真を届けられます。", "パートナーと共有、", "パートナーと共有を選んだときだけ、あなたの iCloud を通って相手に届きます。", "パートナーと共有していたら、相手の画面からも消えます。"],
+    "en": ["Share your week and this week's bump photo with your partner's widget. ", "sharing with your partner, ", "Only when you choose to share do they go to your partner, through your own iCloud. ", " If you shared with your partner, it disappears from their screen too."],
+    "th": ["แชร์สัปดาห์และรูปท้องของสัปดาห์นี้ไปที่วิดเจ็ตของคู่ได้ ", "แชร์กับคู่ ", "จะส่งถึงคู่ผ่าน iCloud ของคุณเองเฉพาะเมื่อคุณเลือกแชร์ ", " ถ้าแชร์กับคู่ไว้ จะหายจากหน้าจอของคู่ด้วย"],
+    "ko": ["파트너의 위젯에도 이번 주와 배 사진을 보낼 수 있어요. ", "파트너와 공유, ", "공유를 선택했을 때만 내 iCloud를 거쳐 파트너에게 전달돼요. ", " 파트너와 공유했다면 상대 화면에서도 사라져요."],
+    "pt": ["Compartilhe sua semana e a foto da barriga com o widget do seu parceiro. ", "compartilhar com o parceiro, ", "Só quando você escolhe compartilhar eles vão para seu parceiro, pelo seu próprio iCloud. ", " Se você compartilhou com seu parceiro, some da tela dele também."],
+    "es": ["Comparte tu semana y la foto de tu barriga con el widget de tu pareja. ", "compartir con tu pareja, ", "Solo cuando eliges compartir llegan a tu pareja, a través de tu propio iCloud. ", " Si lo compartiste con tu pareja, también desaparece de su pantalla."],
+}
+
+def solo(code, t):
+    """共有の説明を外した版（PARTNER=False のとき）。もっと楽しむの1つ目・質問の2・3・5問目＝共有の話。"""
+    t = dict(t)
+    for k in ("desc", "privacy"):
+        for cut in PARTNER_CUT[code]:
+            t[k] = t[k].replace(cut, "")
+    t["price"] = [x.replace(PARTNER_CUT[code][1], "") for x in t["price"]]
+    t["more"] = [(h, b.replace(PARTNER_CUT[code][3], "")) for h, b in t["more"][1:]]
+    t["faq"] = [q for i, q in enumerate(t["faq"]) if i not in (1, 2, 4)]
+    return t
+
 def page(code, folder, hreflang, label):
-    t = T[code]
+    t = T[code] if PARTNER else solo(code, T[code])
     e = html.escape
     up = "../" if folder else ""
     root = up + "../../"
