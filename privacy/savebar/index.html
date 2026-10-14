@@ -17,6 +17,9 @@
 <h2>商品のリンクから写真と名前を読み込むとき</h2>
 <p>目標に商品のリンクを入力すると、本アプリはそのリンク先のお店のページと商品の画像を、お店のサーバーから直接読み込みます。開発者のサーバーは経由しません。
 この通信では、通常のウェブの閲覧と同じように、お店の側に利用者の IP アドレスなどが伝わります。本アプリはこの通信で Cookie を保存せず、目標の名前や金額をお店へ送りません。リンクを入力しなければ、この通信は行いません。</p>
+<h2>Safari 拡張・共有ボタンから保存するとき</h2>
+<p>Safari の拡張機能または共有ボタンから「Savebar」を選んだときだけ、本アプリはそのとき開いているページを読み、商品の名前・写真・値段を探します。読むのは利用者が選んだそのページだけで、ほかのタブや閲覧履歴は読みません。拡張機能を有効にするときに iOS が表示する「パスワードやクレジットカード番号の読み取り」の説明は、ページを読む拡張機能すべてに共通のものです。本アプリはページの内容を端末内で読むだけで、ページの内容や URL を開発者のサーバーへ送信しません。
+保存すると、目標の名前・目標額・商品のリンク・写真が、ほかの目標と同じく端末内（アプリ専用の領域）に保存されます。商品の写真はお店のサーバーから直接読み込みます（上の「商品のリンクから写真と名前を読み込むとき」と同じです）。共有ボタンを Safari 以外のアプリから使ったときは、共有されたリンクのページをお店のサーバーから直接読み込みます。</p>
 <h2>匿名の利用状況</h2>
 <p>本アプリの改善のため、以下の匿名の記録を開発者のサーバーへ送信します。</p>
 <ul>
@@ -25,6 +28,7 @@
   <li>ウィジェットが表示されたこと、およびそのサイズ</li>
   <li>ウィジェットの＋が押されたこと、およびそのウィジェットのサイズ（金額は含みません）</li>
   <li>目標の数（名前や金額は含みません）</li>
+  <li>Safari 拡張・共有ボタンから保存したこと、および写真が付いたかどうか（ページの URL や内容は含みません）</li>
   <li>アプリのバージョン・OS のバージョン・言語設定</li>
   <li>端末内で生成した無作為な識別子（アプリを削除すると消えます）</li>
   <li>接続元の国（IP アドレスは保存しません）</li>
@@ -44,7 +48,7 @@
 <h2>お問い合わせ</h2>
 <p>minaritaniguchi@gmail.com</p>
 <p>アプリの設定の「問い合わせ・不具合の報告」からメールを作ると、本文にアプリのバージョン・iOS のバージョン・機種・言語が入ります（目標の名前・金額・写真は入りません）。送るかどうかは利用者が決められ、送信前に消すこともできます。</p>
-<p class="dim">制定日：2026-09-24<br>改定日：2026-10-11（写真・商品のリンク・お問い合わせのメールについて追記）<br>
+<p class="dim">制定日：2026-09-24<br>改定日：2026-10-14（Safari 拡張・共有ボタンについて追記）<br>
 <a href="../../apps/savebar/">Savebar について</a></p>
 <section lang="en" id="en" style="margin-top:3rem;border-top:1px solid #ddd;padding-top:1.5rem">
 <h1>Savebar Privacy Policy</h1>
@@ -58,6 +62,9 @@ A smaller copy of the chosen photo is saved on your device, in the app's own con
 <h2>Loading a photo and name from a product link</h2>
 <p>When you enter a product link for a goal, the app loads that store's page and product image directly from the store's servers. Nothing passes through the developer's servers.
 As with ordinary web browsing, the store can see your IP address and similar connection details. The app does not keep cookies from this connection and never sends your goal names or amounts to the store. If you don't enter a link, this connection never happens.</p>
+<h2>Saving from the Safari extension or the Share button</h2>
+<p>Only when you choose "Savebar" from Safari's extensions or the Share button does the app read the page you have open, to find the product's name, photo and price. It reads only that page — never your other tabs or your browsing history. The note iOS shows when you turn the extension on ("read passwords, credit card numbers…") is the same for every extension that reads pages. The app reads the page on your device only and never sends the page or its URL to the developer's server.
+When you save, the goal's name, target amount, product link and photo are stored on your device, in the app's own container, like any other goal. The product photo is loaded directly from the store's servers (as in "Loading a photo and name from a product link" above). When you use the Share button from an app other than Safari, the app loads the shared link's page directly from the store's servers.</p>
 <h2>Anonymous usage</h2>
 <p>To improve the app, the following anonymous records are sent to the developer's server.</p>
 <ul>
@@ -66,6 +73,7 @@ As with ordinary web browsing, the store can see your IP address and similar con
   <li>That a widget was displayed, and its size</li>
   <li>That + was tapped on a widget, and that widget's size (never the amount)</li>
   <li>The number of goals (never their names or amounts)</li>
+  <li>That something was saved from the Safari extension or the Share button, and whether it had a photo (never the page URL or its content)</li>
   <li>App version, OS version and language setting</li>
   <li>A random identifier generated on the device (deleted when you delete the app)</li>
   <li>The country of the connection (IP addresses are not stored)</li>
@@ -85,7 +93,7 @@ Stopping also deletes any records not yet sent from the device.</p>
 <h2>Contact</h2>
 <p>minaritaniguchi@gmail.com</p>
 <p>When you write an email from "Contact / report a problem" in the app's Settings, the app version, iOS version, iPhone model and language are filled in (never your goal names, amounts or photos). You decide whether to send it and can delete them before sending.</p>
-<p class="dim">Effective 2026-09-24<br>Updated 2026-10-11 (photos, product links and contact emails)<br>
+<p class="dim">Effective 2026-09-24<br>Updated 2026-10-14 (Safari extension and Share button)<br>
 <a href="../../apps/savebar/en/">About Savebar</a></p>
 </section>
 
