@@ -12,7 +12,7 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 LANGS = [("en", "", "English"), ("ja", "ja/", "日本語"), ("es", "es/", "Español"), ("pt", "pt/", "Português"), ("zh", "zh/", "简体中文")]
 HTML_LANG = {"en": "en", "ja": "ja", "es": "es", "pt": "pt-BR", "zh": "zh-Hans"}
-MAIL = "minaritaniguchi@gmail.com"
+MAIL = "minariapps@gmail.com"
 
 T = {}
 
