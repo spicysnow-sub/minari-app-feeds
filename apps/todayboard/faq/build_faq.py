@@ -30,7 +30,7 @@ T["en"] = dict(
     h_faq="Frequently asked questions",
     faq=[
         ("Is this a subscription?", "No. The Small widget, the app's today view, hiding all-day events and joining meetings are free. Pro is a one-time purchase that adds Medium, Large and Lock Screen widgets, choosing calendars and showing up to 7 days. It works on all your iPhones and iPads with the same Apple ID."),
-        ("My Google or Outlook calendar doesn't show up.", "Todayboard reads the iPhone's Calendar, not the inside of the Google Calendar app. Add the account to your iPhone: Settings → Apps → Calendar → Calendar Accounts → Add Account (on iOS 17: Settings → Calendar → Accounts), and turn on Calendars. If a shared Google calendar is still missing, open calendar.google.com/calendar/syncselect on a computer and tick it. A direct Google connection is planned for a future update."),
+        ("My Google or Outlook calendar doesn't show up.", "Todayboard reads the iPhone's Calendar, not the inside of the Google Calendar app. Add the account to your iPhone: Settings → Apps → Calendar → Calendar Accounts → Add Account (on iOS 17: Settings → Calendar → Accounts), and turn on Calendars. If a shared Google calendar is still missing, open calendar.google.com/calendar/syncselect on a computer and tick it."),
         ("A new event doesn't appear on the widget right away.", "The widget redraws itself when an event starts or ends and about every hour. Opening Todayboard updates it immediately."),
         ("My Medium widget only shows today.", "The range is set to Today by default. In the app, under Display, set “Widget shows” to Today + tomorrow or Next 7 days (Pro). Medium shows up to 2 days, Large up to 7."),
         ("There's a lock on my Medium or Large widget.", "Medium, Large and Lock Screen widgets are Pro. The free version includes the Small widget."),
@@ -61,7 +61,7 @@ T["ja"] = dict(
     h_faq="よくある質問",
     faq=[
         ("サブスクですか？", "いいえ。Small ウィジェット、アプリの今日の予定、終日を隠す、会議への参加は無料です。Pro は買い切りで、Medium・Large・ロック画面のウィジェット、カレンダーの選択、7日先までの表示が加わります。同じ Apple ID の iPhone・iPad すべてで使えます。"),
-        ("Google・Outlook のカレンダーが出ません。", "Todayboard は iPhone の「カレンダー」を読みます。Google カレンダーのアプリの中は読めません。「設定」→「アプリ」→「カレンダー」→「カレンダーアカウント」→「アカウントを追加」（iOS 17 は「設定」→「カレンダー」→「アカウント」）でアカウントを足し、「カレンダー」をオンにしてください。共有された Google のカレンダーが出ないときは、パソコンで calendar.google.com/calendar/syncselect を開いてチェックを入れます。Google と直接つなぐ機能は今後のアップデートで予定しています。"),
+        ("Google・Outlook のカレンダーが出ません。", "Todayboard は iPhone の「カレンダー」を読みます。Google カレンダーのアプリの中は読めません。「設定」→「アプリ」→「カレンダー」→「カレンダーアカウント」→「アカウントを追加」（iOS 17 は「設定」→「カレンダー」→「アカウント」）でアカウントを足し、「カレンダー」をオンにしてください。共有された Google のカレンダーが出ないときは、パソコンで calendar.google.com/calendar/syncselect を開いてチェックを入れます。"),
         ("新しく入れた予定が、すぐウィジェットに出ません。", "ウィジェットは予定の始まり・終わりと、1時間ごとに描き直します。Todayboard を開くとすぐに更新されます。"),
         ("Medium ウィジェットに今日しか出ません。", "範囲の初期設定は「今日」です。アプリの「表示」で「ウィジェットの範囲」を「今日と明日」か「7日間」（Pro）にしてください。Medium は2日まで、Large は7日まで出ます。"),
         ("Medium や Large のウィジェットに鍵のマークが出ます。", "Medium・Large・ロック画面のウィジェットは Pro の機能です。無料では Small ウィジェットを使えます。"),
@@ -92,7 +92,7 @@ T["es"] = dict(
     h_faq="Preguntas frecuentes",
     faq=[
         ("¿Es una suscripción?", "No. El widget pequeño, la vista de hoy en la app, ocultar eventos de todo el día y unirse a reuniones son gratis. Pro es un pago único que añade los widgets mediano, grande y de pantalla bloqueada, elegir calendarios y ver hasta 7 días. Funciona en todos tus iPhone y iPad con el mismo Apple ID."),
-        ("No aparece mi calendario de Google u Outlook.", "Todayboard lee el Calendario del iPhone, no el interior de la app Google Calendar. Añade la cuenta al iPhone: Ajustes → Apps → Calendario → Cuentas de Calendario → Añadir cuenta (en iOS 17: Ajustes → Calendario → Cuentas) y activa Calendarios. Si falta un calendario compartido de Google, abre calendar.google.com/calendar/syncselect en un ordenador y márcalo. Una conexión directa con Google está prevista para una próxima actualización."),
+        ("No aparece mi calendario de Google u Outlook.", "Todayboard lee el Calendario del iPhone, no el interior de la app Google Calendar. Añade la cuenta al iPhone: Ajustes → Apps → Calendario → Cuentas de Calendario → Añadir cuenta (en iOS 17: Ajustes → Calendario → Cuentas) y activa Calendarios. Si falta un calendario compartido de Google, abre calendar.google.com/calendar/syncselect en un ordenador y márcalo."),
         ("Un evento nuevo no aparece enseguida en el widget.", "El widget se redibuja cuando empieza o termina un evento y más o menos cada hora. Al abrir Todayboard se actualiza al momento."),
         ("Mi widget mediano solo muestra hoy.", "El rango viene en Hoy. En la app, en Visualización, cambia “El widget muestra” a Hoy + mañana o Próximos 7 días (Pro). El mediano muestra hasta 2 días y el grande hasta 7."),
         ("Mi widget mediano o grande tiene un candado.", "Los widgets mediano, grande y de pantalla bloqueada son Pro. La versión gratis incluye el widget pequeño."),
@@ -123,7 +123,7 @@ T["pt"] = dict(
     h_faq="Perguntas frequentes",
     faq=[
         ("É uma assinatura?", "Não. O widget pequeno, a visão de hoje no app, ocultar eventos de dia inteiro e entrar em reuniões são grátis. O Pro é uma compra única que adiciona os widgets médio, grande e da tela bloqueada, escolher calendários e ver até 7 dias. Funciona em todos os seus iPhones e iPads com o mesmo ID Apple."),
-        ("Meu calendário do Google ou do Outlook não aparece.", "O Todayboard lê o Calendário do iPhone, não o interior do app Google Agenda. Adicione a conta ao iPhone: Ajustes → Apps → Calendário → Contas de Calendário → Adicionar Conta (no iOS 17: Ajustes → Calendário → Contas) e ative Calendários. Se um calendário compartilhado do Google ainda não aparecer, abra calendar.google.com/calendar/syncselect num computador e marque-o. Uma conexão direta com o Google está prevista para uma próxima atualização."),
+        ("Meu calendário do Google ou do Outlook não aparece.", "O Todayboard lê o Calendário do iPhone, não o interior do app Google Agenda. Adicione a conta ao iPhone: Ajustes → Apps → Calendário → Contas de Calendário → Adicionar Conta (no iOS 17: Ajustes → Calendário → Contas) e ative Calendários. Se um calendário compartilhado do Google ainda não aparecer, abra calendar.google.com/calendar/syncselect num computador e marque-o."),
         ("Um evento novo não aparece logo no widget.", "O widget se redesenha quando um evento começa ou termina e mais ou menos a cada hora. Abrir o Todayboard atualiza na hora."),
         ("Meu widget médio só mostra hoje.", "O intervalo vem em Hoje. No app, em Exibição, mude “O widget mostra” para Hoje + amanhã ou Próximos 7 dias (Pro). O médio mostra até 2 dias e o grande até 7."),
         ("Aparece um cadeado no meu widget médio ou grande.", "Os widgets médio, grande e da tela bloqueada são Pro. A versão grátis inclui o widget pequeno."),
@@ -154,7 +154,7 @@ T["zh"] = dict(
     h_faq="常见问题",
     faq=[
         ("是订阅吗？", "不是。小号小组件、App 中的今日日程、隐藏全天日程和加入会议都是免费的。Pro 为一次性购买，增加中号、大号和锁定屏幕小组件，可选择日历并显示最多 7 天。同一 Apple ID 的所有 iPhone 和 iPad 均可使用。"),
-        ("看不到我的 Google 或 Outlook 日历。", "Todayboard 读取的是 iPhone 的“日历”，无法读取 Google 日历 App 内部。请把账户添加到 iPhone：“设置”→“App”→“日历”→“日历账户”→“添加账户”（iOS 17：“设置”→“日历”→“账户”），并打开“日历”。如果共享的 Google 日历仍未出现，请在电脑上打开 calendar.google.com/calendar/syncselect 并勾选。与 Google 直接连接的功能计划在之后的更新中提供。"),
+        ("看不到我的 Google 或 Outlook 日历。", "Todayboard 读取的是 iPhone 的“日历”，无法读取 Google 日历 App 内部。请把账户添加到 iPhone：“设置”→“App”→“日历”→“日历账户”→“添加账户”（iOS 17：“设置”→“日历”→“账户”），并打开“日历”。如果共享的 Google 日历仍未出现，请在电脑上打开 calendar.google.com/calendar/syncselect 并勾选。"),
         ("新添加的日程没有马上出现在小组件上。", "小组件会在日程开始、结束时以及大约每小时重新绘制。打开 Todayboard 会立即更新。"),
         ("中号小组件只显示今天。", "范围默认为“今天”。请在 App 的“显示”中把“小组件显示”改为“今天 + 明天”或“未来 7 天”（Pro）。中号最多显示 2 天，大号最多 7 天。"),
         ("中号或大号小组件上有锁的标记。", "中号、大号和锁定屏幕小组件属于 Pro。免费版包含小号小组件。"),
